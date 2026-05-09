@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "LineSeed";
+    src: url("fonts/LINESeedSans_W_Rg.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 /* ── Variables ── */
 :root {
     --bg:       #f0ede8;
@@ -8,8 +15,7 @@
     --white:    #ffffff;
     --card-bg:  #ffffff;
     --radius:   20px;
-    --font-body: 'Sora', sans-serif;
-    --font-hand: 'Caveat', cursive;
+    --font-body: 'LineSeed', sans-serif;
     --font-serif: 'Instrument Serif', serif;
 }
 
@@ -82,7 +88,7 @@ nav {
 
 .nav-logo {
     font-family: var(--font-hand);
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--mid);
     letter-spacing: -1px;
 }
@@ -140,25 +146,24 @@ nav {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 160px 80px 80px;
-    position: relative;
-    overflow: hidden;
+    justify-content: center;
+
+    padding: 120px 10vw 200px;
+    align-items: flex-start;
 }
 
 /* Hero headline */
 .hero-headline {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 1.1;
-    letter-spacing: -2px;
-    max-width: 840px;
 }
 
 .hero-comment {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #999;
     font-family: var(--font-body);
+    font-weight: 400;
     opacity: 0.8;
   }
 
@@ -171,7 +176,7 @@ nav {
     padding: 4px 28px 6px;
     margin-left: 6px;
     font-style: italic;
-    font-family: var(--font-serif);
+    font-family: var(--font-body);
     font-size: clamp(2.2rem, 4.5vw, 3.8rem);
     letter-spacing: -1px;
 }
@@ -262,18 +267,16 @@ transform: translateX(-50%) translateY(2px);
 
 .case-study-title {
     font-size: clamp(1.6rem, 3vw, 2.4rem);
-    font-weight: 800;
+    font-weight: 1500;
     line-height: 1.15;
-    letter-spacing: -1px;
     margin-bottom: 16px;
 }
 
 .case-study-desc {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--mid);
     line-height: 1.7;
     margin-bottom: 28px;
-    max-width: 480px;
 }
 
 .case-study-link {
