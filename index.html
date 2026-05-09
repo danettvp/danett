@@ -5,58 +5,118 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Danett | UX Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <h1 class="logo">Danett</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <span class="nav-logo">Danett</span>
+    <ul class="nav-links">
+      <li><a href="#work">✳ My Work</a></li>
+      <li><a href="#">◯ How I Think</a></li>
+      <li><a href="https://linkedin.com" target="_blank" class="nav-active">in LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+
+    <!-- main headline -->
+    <h1 class="hero-headline">
+        <span class="hero-comment">
+          &lt;!- - hi, i'm danett - -&gt;
+        </span>
+        <br>
+        An empathetic designer who crafts intuitive experiences by decoding human behavior and needs.
+      </h1>
+
+    <a href="#work" class="scroll-indicator">
+        ﹀
+    </a>
+
+
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── Work / Case Studies ── -->
+  <section class="work" id="work">
+
+    <div class="work-grid">
+
+      <!-- Case Study 1 -->
+      <article class="case-study">
+        <div class="case-study-text">
+          <p class="case-study-year">2025</p>
+          <h2 class="case-study-title">I designed AI maker tools at Microsoft that help people build automation they can actually trust.</h2>
+          <p class="case-study-desc">Working within the Humans & AI Agents team, I helped shape how non-technical users understand and control automated workflows — balancing transparency with simplicity.</p>
+        </div>
+        <div class="case-study-image">
+          <div class="card-placeholder">
+            <div class="card-logo">
+              Microsoft
+              <span style="color: #ccc; font-weight: 300; font-size: 1.2rem;">|</span>
+              Humans &amp; AI Agents
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case Study 2 -->
+      <article class="case-study">
+        <div class="case-study-text">
+          <div class="case-study-tags">
+            <span class="tag">Social</span>
+            <span class="tag">Mobile</span>
+            <span class="tag">Teen UX</span>
+          </div>
+          <p class="case-study-year">2024</p>
+          <h2 class="case-study-title">I also helped teens move from endless chats to actual plans.</h2>
+          <p class="case-study-desc">Designing for Ping — a social coordination app for Gen Z — meant rethinking how young people move from "we should hang" to actually hanging. Less friction, more follow-through.</p>
+        </div>
+        <div class="case-study-image card-dark" style="background:#2a2a2a;">
+          <div class="card-placeholder">
+            <div class="card-logo" style="color:#fff; font-size: 2rem; font-weight: 800; letter-spacing: -1px;">
+              <span style="color: #b47fe8; font-size: 1.8rem;">●</span> Ping
+            </div>
+            <p class="card-sub" style="color: #888;">Social coordination for Gen Z</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case Study 3 — placeholder for a third project -->
+      <article class="case-study">
+        <div class="case-study-text">
+          <div class="case-study-tags">
+            <span class="tag">Systems Design</span>
+            <span class="tag">Design Ops</span>
+          </div>
+          <p class="case-study-year">2023</p>
+          <h2 class="case-study-title">Building a design system that scaled across six product teams without losing its soul.</h2>
+          <p class="case-study-desc">A component library is only as useful as its adoption. I worked with engineers and PMs to ship a system that developers actually wanted to use — documented, consistent, and alive.</p>
+        </div>
+        <div class="case-study-image" style="background: #e8f4f0;">
+          <div class="card-placeholder">
+            <div class="card-logo" style="color: #1a8a7a; font-size: 1.1rem;">
+              ⬡ Design System
+            </div>
+            <p class="card-sub">Tokens · Components · Docs</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <span class="foot-left">Danett</span>
+    <nav class="foot-right" aria-label="Footer navigation">
     </nav>
-    <section class="hero">
-      <h2>Hi, I'm Danett.<br>A UX Designer crafting better experiences.</h2>
-      <p>I help people interact with technology seamlessly through research, empathy, and elegant design.</p>
-      <a href="#projects" class="cta">See My Work</a>
-    </section>
-  </header>
-
-  <main>
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        I’m a UX designer focused on intuitive interfaces, evidence-based design, and accessible solutions.
-        My work combines user research, prototyping, and visual storytelling. Let’s create impactful experiences together!
-      </p>
-    </section>
-
-    <section id="projects" class="projects">
-      <h2>Featured Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="project1-thumb.jpg" alt="Project 1 Screenshot">
-          <h3>App Redesign</h3>
-          <p>Increased user retention 35% through a complete mobile app UX overhaul.</p>
-          <a href="#">Read Case Study</a>
-        </div>
-        <div class="project-card">
-          <img src="project2-thumb.jpg" alt="Project 2 Screenshot">
-          <h3>E-Commerce Website</h3>
-          <p>Built a conversion-focused online shop balancing usability with brand trust.</p>
-          <a href="#">Read Case Study</a>
-        </div>
-        <!-- Add more projects as needed -->
-      </div>
-    </section>
-  </main>
-
-  <footer id="contact">
-    <h2>Let's Connect</h2>
-    <p>Email: <a href="mailto:danettvp@example.com">danettvp@example.com</a>  |  
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-    </p>
   </footer>
+
+  <div id="cursorHint">scroll</div>
+  <div class="cursor-label">Open project</div>
+
 </body>
 </html>
